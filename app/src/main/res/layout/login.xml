@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/loginapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvIdagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clicklogin"
+        android:paddingLeft="40dp"
+        android:paddingRight="20dp"
+        android:text="@string/idagen"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:paddingTop="240dp"/>
+
+    <EditText
+        android:id="@+id/etTextlogin"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:onClick="clicklogin"
+        android:layout_below="@id/tvIdagen"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/inputfield" />
+
+    <TextView
+        android:id="@+id/tvNohp"
+        android:layout_below="@id/etTextlogin"
+        android:onClick="clicklogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="20dp"
+        android:text="@string/no_hp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etNohp"
+        android:background="@drawable/inputfield"
+        android:onClick="clicklogin"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/tvNohp"
+        android:layout_width="360dp"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:id="@+id/ibLogin"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/etNohp"
+        android:onClick="clicklogin"
+        android:background="@drawable/login"
+        android:layout_width="350dp"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:id="@+id/ibRegistrasi"
+        android:layout_below="@+id/ibLogin"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginRight="135dp"
+        android:onClick="clicklogin"
+        android:background="@drawable/registrasi"
+        android:layout_width="120dp"
+        android:layout_height="30dp"/>
+
+    <ImageButton
+        android:id="@+id/ibLupa"
+        android:layout_below="@+id/ibRegistrasi"
+        android:onClick="clicklogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/lupa_kode"
+        android:layout_width="150dp"
+        android:layout_height="30dp"/>
+
+</RelativeLayout>

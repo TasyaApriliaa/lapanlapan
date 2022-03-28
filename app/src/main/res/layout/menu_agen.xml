@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@drawable/menu_agen1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        tools:ignore="MissingConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivTransaksi"
+            android:background="@drawable/menu_transaksi"
+            android:onClick="clicktransaksi"
+            android:layout_width="102dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="57dp"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/ivMenuagen"
+            android:background="@drawable/menu_agen"
+            android:onClick="clickagen"
+            android:layout_width="102dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="57dp"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/ivHistory"
+            android:background="@drawable/data_history"
+            android:onClick="clickhistory"
+            android:layout_width="103dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="57dp"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/ivNews"
+            android:background="@drawable/news"
+            android:onClick="clicknews"
+            android:layout_width="102dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="57dp"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
